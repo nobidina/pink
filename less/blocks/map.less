@@ -1,0 +1,98 @@
+.map {
+  position: relative;
+  z-index: -1;
+  .container();
+  width: 320px;
+  height: 200px;
+  background: url("../img/bg-map-tablet@1x.jpg") no-repeat -190px -448px;
+  background-size: 700px 848px;
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 33px;
+    background: url("../img/bg-triangle-white-footer.svg") no-repeat top left;
+    background-size: 320px 33px;
+  }
+  &_no-js::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 200px;
+    background: url("../img/icons/icon-map-marker.svg") no-repeat center center;
+    background-size: 36px 36px;
+  }
+}
+
+@media (min-resolution: 144dpi),
+        (min-resolution: 1.5dppx) {
+  .map {
+    background: url("../img/bg-map-tablet@2x.jpg") no-repeat -190px -448px;
+    background-size: 700px 848px;
+  }
+}
+
+@media @tablet-widths {
+  .map {
+    height: 377px;
+    margin-top: -25px;
+    background: url("../img/bg-map-tablet@1x.jpg") no-repeat 0 -344px;
+    background-size: 700px 848px;
+    &::before {
+      width: 700px;
+      height: 73px;
+      background: url("../img/bg-triangle-white-footer.svg") no-repeat top left;
+      background-size: 700px 73px;
+    }
+    &_no-js::after {
+      width: 700px;
+      height: 380px;
+      background: url("../img/icons/icon-map-marker.svg") no-repeat 332px 195px;
+      background-size: 36px 36px;
+    }
+  }
+}
+
+@media (min-resolution: 144dpi),
+        (min-resolution: 1.5dppx) {
+  .map {
+    background: url("../img/bg-map-tablet@2x.jpg") no-repeat 0 -344px;
+    background-size: 700px 848px;
+  }
+}
+
+
+@media @desktop-widths {
+  .map {
+    width: 1200px;
+    height: 500px;
+    background: url("../img/bg-map-desktop@1x.jpg") no-repeat 0 -279px;
+    background-size: 1200px 976px;
+    &::before {
+      width: 1200px;
+      height: 125px;
+      background: url("../img/bg-triangle-white-footer.svg") no-repeat top left;
+      background-size: 1200px 125px;
+    }
+    &_no-js::after {
+      width: 1200px;
+      height: 500px;
+      background: url("../img/icons/icon-map-marker.svg") no-repeat center 260px;
+      background-size: 36px 36px;
+    }
+  }
+
+  @media (min-resolution: 144dpi),
+          (min-resolution: 1.5dppx) {
+    .map {
+      background: url("../img/bg-map-desktop@2x.jpg") no-repeat 0 -279px;
+      background-size: 1200px 976px;
+    }
+  }
+
+}

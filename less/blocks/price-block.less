@@ -1,0 +1,24 @@
+.price-block {
+  position: relative;
+  .container();
+  padding-top: 100px;
+  padding-bottom: 38px;
+  background: @bg-grey url("../img/bg-triangle-white.svg") no-repeat top left;
+  background-size: 700px 55px;
+}
+
+@media @tablet-widths {
+  .price-block {
+    padding-top: 87px;
+  }
+}
+
+@media @desktop-widths {
+  .price-block {
+    margin-top: -10px;
+    padding-top: 149px;
+    padding-bottom: 64px;
+    background: @bg-grey url("../img/bg-triangle-white.svg") no-repeat left -2px;
+    background-size: 1200px 95px;
+  }
+}

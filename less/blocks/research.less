@@ -1,0 +1,114 @@
+.research {
+  display: none;
+}
+
+@media @tablet-widths {
+
+  .research {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    .container();
+    padding-top: 70px;
+    padding-left: 350px;
+    padding-right: 53px;
+    padding-bottom: 84px;
+    &::before {
+      content: "24";
+      box-sizing: border-box;
+      position: absolute;
+      top: 58px;
+      left: 40px;
+      width: 240px;
+      height: 275px;
+      padding-top: 75px;
+      background: url("../img/icons/icon-timer.svg") no-repeat top left;
+      background-size: contain;
+      text-align: center;
+      font-family: @font-bold;
+      font-size: 96px;
+      line-height: 150px;
+      color: @pink;
+    }
+    &::after {
+      content: "";
+      box-sizing: border-box;
+      position: absolute;
+      top: 60px;
+      left: 40px;
+      width: 240px;
+      height: 275px;
+      background: url("../img/icons/icon-editor-diagram-fill.svg") no-repeat 19px 53px;
+      background-size: 200px 200px;
+    }
+  }
+  .research__title {
+    margin-bottom: -5px;
+    font-family: @font-bold;
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .research__text {
+    margin-bottom: 5px;
+    line-height: 24px;
+  }
+  .research__link {
+    cursor: pointer;
+    border-bottom: 1px solid @pink;
+    line-height: 24px;
+    text-decoration: none;
+    color: @pink;
+    &:hover {
+      color: @blue;
+      border-color: @blue;
+    }
+    &:active {
+      color: #cdcfd1;
+      border-color: #cdcfd1;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .research {
+    padding-top: 113px;
+    padding-left: 498px;
+    padding-right: 165px;
+    padding-bottom: 113px;
+    background: @bg-grey;
+    &::before {
+      top: 47px;
+      left: 133px;
+      width: 298px;
+      height: 350px;
+      padding-top: 95px;
+      font-size: 120px;
+      line-height: 187px;
+    }
+    &::after {
+      top: 62px;
+      left: 136px;
+      width: 298px;
+      height: 350px;
+      background-size: 253px 253px;
+    }
+  }
+  .research__title {
+    margin-bottom: 20px;
+    font-family: @font-bold;
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .research__text {
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .research__link {
+    font-size: 18px;
+    line-height: 30px;
+    &::after {
+      top: 22px;
+    }
+  }
+}

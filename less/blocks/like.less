@@ -1,0 +1,46 @@
+.like {
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: @pink;
+}
+.like__icon {
+  display: inline-block;
+  width: 15px;
+  height: 12px;
+  margin-right: 15px;
+  background: url("../img/icons/icon-heart.svg") no-repeat top center;
+}
+
+@media @tablet-widths {
+  .like {
+    align-self: flex-end;
+    display: flex;
+    &_position {
+      position: absolute;
+      top: 20px;
+      right: 14px;
+    }
+  }
+  .like__icon {
+    order: 3;
+    position: absolute;
+    right: 20px;
+    bottom: 28px;
+    height: 15px;
+    margin-left: 140px;
+    background: url("../img/icons/icon-heart.svg") no-repeat center center;
+    background-size: 15px 14px;
+    &_position {
+      position: static;
+      margin-top: 7px;
+      margin-left: 14px;
+    }
+  }
+  .like__text {
+    order: 1;
+  }
+  .like__count {
+    order: 2;
+  }
+}

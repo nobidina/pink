@@ -1,0 +1,119 @@
+.main-footer {
+  .container();
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+  &_hidden {
+    display: none;
+  }
+}
+.main-footer__logo-wrapper {
+  margin-bottom: 30px;
+  &:hover {
+    opacity: 0.7;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+.main-footer__social-wrapper {
+  width: 183px;
+  margin: 0 auto 38px auto;
+  vertical-align: middle;
+}
+.main-footer__social-btn {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 51px;
+  height: 51px;
+  padding-top: 10px;
+  margin-right: 7px;
+  border: 3px solid #e9ebec;
+  border-radius: 50%;
+  background: @bg-white;
+  fill: @bg-pink;
+  &:hover {
+    border-color: @blue;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.main-footer__copyright-wrapper {
+  display: inline-block;
+  vertical-align: middle;
+  width: 140px;
+  margin: 0 auto;
+}
+.main-footer__copyright-text {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 18px;
+  margin-right: 12px;
+}
+.main-footer__copyright-link {
+  display: inline-block;
+  vertical-align: middle;
+  width: 27px;
+  height: 35px;
+  fill: @bg-pink;
+  &:hover .main-footer__copyright-icon {
+    fill: @blue;
+  }
+  &:active .main-footer__copyright-icon {
+    fill: #bec2c7;
+  }
+}
+.main-footer__copyright-icon {
+  width: 27px;
+  height: 35px;
+}
+
+@media @tablet-widths {
+  .main-footer {
+    .content-container();
+    padding-top: 36px;
+    margin-bottom: 40px;
+    &_hidden {
+      display: block;
+    }
+  }
+  .main-footer__logo-wrapper {
+    float: left;
+    margin-left: 20px;
+    margin-right: 72px;
+  }
+  .main-footer__social-wrapper {
+    float: left;
+    margin-right: 85px;
+  }
+  .main-footer__copyright-wrapper {
+    float: left;
+    padding-top: 10px;
+  }
+}
+
+@media @desktop-widths {
+  .main-footer {
+    margin-bottom: 50px;
+    padding-top: 70px;
+  }
+  .main-footer__logo-wrapper {
+    margin-left: 0;
+    margin-right: 232px;
+    margin-bottom: 70px;
+  }
+  .main-footer__copyright-wrapper {
+    width: 156px;
+    padding-top: 12px;
+  }
+  .main-footer__social-wrapper {
+    margin-right: 222px;
+  }
+  .main-footer__copyright-text {
+    font-size: 18px;
+  }
+}

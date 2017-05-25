@@ -1,0 +1,46 @@
+.main-header {
+  position: relative;
+  box-sizing: border-box;
+  .container();
+  padding-top: 22px;
+  background-color: @blue;
+}
+.main-header__logo {
+  width: 80px;
+  padding-left: 21px;
+  padding-bottom: 14px;
+  &:hover {
+    opacity: 0.7;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media @tablet-widths {
+  .main-header {
+    padding-top: 27px;
+  }
+  .main-header__logo {
+    width: 145px;
+    padding-left: 40px;
+    padding-bottom: 33px;
+  }
+  .main-header__logo-img {
+    width: 145px;
+  }
+}
+
+@media @desktop-widths {
+  .main-header {
+    .clearfix();
+    padding-top: 26px;
+    background-color: rgba(20, 26, 33, 0.4);
+  }
+  .main-header__logo {
+    float: left;
+    padding-left: 132px;
+    padding-bottom: 34px;
+    margin-right: 89px;
+  }
+}

@@ -1,0 +1,113 @@
+.photo-block {
+  .content-container();
+  &_wide {
+    width: 320px;
+  }
+}
+.photo-block__content-wrapper {
+  box-sizing: border-box;
+  margin-top: -10px;
+  margin-bottom: 21px;
+  padding: 5px 17px 15px 17px;
+  text-align: left;
+  background: @bg-grey;
+  &_wide {
+    .content-container();
+    margin-top: -10px;
+    margin-bottom: 20px;
+  }
+}
+.photo-block__author {
+  margin-bottom: -15px;
+  font-family: @font-bold;
+  line-height: 24px;
+}
+.photo-block__time {
+  font-family: @font-light;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.photo-block__text {
+  margin-bottom: 6px;
+  line-height: 24px;
+}
+
+@media @tablet-widths {
+  .photo-block {
+    float: left;
+    width: 300px;
+    min-height: 474px;
+    margin: 0 0 0 20px;
+    &:nth-of-type(2n+2) {
+      margin-left: 40px;
+    }
+    &_wide {
+      width: 700px;
+      margin: 0;
+    }
+  }
+  .photo-block__img {
+    width: 100%;
+  }
+  .photo-block__content-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 155px;
+    max-height: 155px;
+    margin-top: -9px;
+    margin-bottom: 20px;
+    padding: 21px 17px 23px 27px;
+    &_wide {
+      width: 620px;
+      margin-bottom: 50px;
+      min-height: 120px;
+      max-height: 120px;
+    }
+  }
+  .photo-block__author {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .photo-block__text {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media @desktop-widths {
+  .photo-block {
+    width: 300px;
+    min-height: 448px;
+    margin: 0 0 33px 20px;
+    &:nth-of-type(2n+2) {
+      margin-left: 20px;
+    }
+    &:nth-of-type(3n+2) {
+      margin-left: 130px;
+    }
+    &_wide {
+      width: 1200px;
+      min-height: 95px;
+      margin: 0;
+    }
+  }
+  .photo-block__content-wrapper {
+    min-height: 155px;
+    padding: 25px 17px 17px 27px;
+    &_wide {
+      width: 940px;
+      min-height: 95px;
+      margin-bottom: 51px;
+    }
+  }
+  .photo-block__author {
+    margin-bottom: -5px;
+  }
+}

@@ -1,0 +1,46 @@
+.form-block {
+  .container();
+  padding-top: 46px;
+}
+.form-block__text {
+  .content-container();
+  text-align: center;
+  margin-bottom: 30px;
+  &_hidden {
+    display: none;
+  }
+}
+
+@media @tablet-widths {
+  .form-block {
+    padding-top: 92px;
+    padding-bottom: 40px;
+  }
+  .form-block__text {
+    width: 500px;
+    margin-bottom: 0px;
+    font-size: 18px;
+    &_hidden {
+      display: block;
+      margin-bottom: 34px;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .form-block {
+    padding-top: 92px;
+    padding-bottom: 0px;
+  }
+  .form-block__text {
+    width: 800px;
+    margin-bottom: 34px;
+    font-size: 18px;
+    &_hidden {
+      display: inline;
+    }
+  }
+  .form-block__text br {
+    display: none;
+  }
+}

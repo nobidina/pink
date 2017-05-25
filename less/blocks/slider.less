@@ -1,0 +1,139 @@
+.slider {
+  position: relative;
+}
+.slider__btn {
+  display: none;
+}
+.slider__inner {
+  overflow: hidden;
+}
+.slider__slides {
+  width: 960px;
+  transition: transform 0.8s ease;
+  &_width {
+    width: 1120px
+  }
+}
+.slider__slide {
+  float: left;
+  width: 320px;
+}
+.slider__controls-wrapper {
+  text-align: center;
+}
+.slider__control {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 4px 0 5px;
+  border: 3px solid @white;
+  border-radius: 50%;
+  background-color: #bec2c7;
+  cursor: pointer;
+  &:hover {
+    background-color: #7e868f;
+  }
+  &:active {
+    background-color: #e9ebec;
+  }
+}
+.slider__btn_1:checked ~ .slider__controls-wrapper .slider__control_1,
+.slider__btn_2:checked ~ .slider__controls-wrapper .slider__control_2,
+.slider__btn_3:checked ~ .slider__controls-wrapper .slider__control_3 {
+  border: 3px solid @blue;
+  background-color: @white;
+}
+
+.slider__btn_1:checked ~ .slider__inner .slider__slides {
+  transform: translate(0);
+}
+
+.slider__btn_2:checked ~ .slider__inner .slider__slides {
+  transform: translate(-320px);
+}
+
+.slider__btn_3:checked ~ .slider__inner .slider__slides {
+  transform: translate(-640px);
+}
+
+.slider__btn_1:checked ~ .slider__inner .price {
+  transform: translate(-280px);
+}
+
+.slider__btn_2:checked ~ .slider__inner .price {
+  transform: translate(-540px);
+}
+
+.slider__btn_3:checked ~ .slider__inner .price {
+  transform: translate(-800px);
+}
+
+@media @tablet-widths {
+  .slider__slides {
+    width: 2100px;
+    &_width {
+      width: 620px;
+    }
+  }
+  .slider__slide {
+    width: 700px;
+  }
+  .slider__control {
+    &_hidden {
+      display: none;
+    }
+  }
+
+  .slider__btn_1:checked ~ .slider__inner .slider__slides {
+    transform: translate(0);
+  }
+
+  .slider__btn_2:checked ~ .slider__inner .slider__slides {
+    transform: translate(-700px);
+  }
+
+  .slider__btn_3:checked ~ .slider__inner .slider__slides {
+    transform: translate(-1400px);
+  }
+
+  .slider__btn_1:checked ~ .slider__inner .price {
+    transform: none;
+  }
+
+  .slider__btn_2:checked ~ .slider__inner .price {
+    transform: none;
+  }
+
+  .slider__btn_3:checked ~ .slider__inner .price {
+    transform: none;
+  }
+}
+
+@media @desktop-widths {
+  .slider__slides {
+    width: 3600px;
+    &_width {
+      width: 940px;
+    }
+  }
+  .slider__slide {
+    width: 1200px;
+  }
+  .slider__control {
+    display: none;
+    &_no-js {
+      display: inline-block;
+    }
+  }
+  .slider__btn_1:checked ~ .slider__inner .slider__slides {
+    transform: translate(0);
+  }
+
+  .slider__btn_2:checked ~ .slider__inner .slider__slides {
+    transform: translate(-1200px);
+  }
+
+  .slider__btn_3:checked ~ .slider__inner .slider__slides {
+    transform: translate(-2400px);
+  }
+}

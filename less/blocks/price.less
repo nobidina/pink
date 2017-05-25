@@ -1,0 +1,128 @@
+.price {
+  border-collapse: collapse;
+  text-align: left;
+  margin-bottom: 32px;
+}
+.price__cell {
+  box-sizing: border-box;
+  width: 280px;
+  padding: 13px 0 16px 22px;
+  border: 1px solid @bg-grey;
+  background: @bg-white;
+  text-transform: uppercase;
+  &_header {
+    position: relative;
+    padding: 0 0 0 10px;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    background: @bg-blue;
+    text-align: center;
+    line-height: 24px;
+    color: @white;
+  }
+  &_hidden {
+    background-color: transparent;
+  }
+  &_yes {
+    background: @bg-white url("../img/icons/icon-yes.svg") no-repeat 230px 14px;
+    background-size: 30px 30px;
+  }
+  &_no {
+    background: @bg-white url("../img/icons/icon-no.svg") no-repeat 230px 14px;
+    background-size: 28px 28px;
+  }
+  &_hit {
+    background: @bg-blue url("../img/icons/bg-hit.svg") no-repeat top left;
+    background-size: 74px 73px;
+  }
+  &_hit::before {
+    content: "ХИТ";
+    position: absolute;
+    top: 13px;
+    left: 15px;
+    transform: rotate(-45deg);
+  }
+}
+.price__title {
+  font-family: @font-bold;
+  font-size: 18px;
+}
+.price__text {
+  margin-top: -9px;
+  font-family: @font-light;
+  font-size: 24px;
+}
+
+@media @tablet-widths {
+  .price {
+    width: 620px;
+    margin-left: 40px;
+  }
+  .price__cell {
+    width: 155px;
+    padding: 6px 0 9px 16px;
+    text-transform: none;
+    &_header {
+      padding: 0 0 0 0;
+      text-transform: uppercase;
+    }
+    &_yes {
+      background: @bg-white url("../img/icons/icon-yes.svg") no-repeat center center;
+      background-size: 30px 30px;
+    }
+    &_no {
+      background: @bg-white url("../img/icons/icon-no.svg") no-repeat center center;
+      background-size: 28px 28px;
+    }
+    &_hit {
+      background: @bg-blue url("../img/icons/bg-hit.svg") no-repeat top left;
+      background-size: 60px 58px;
+    }
+    &_hit::before {
+      top: 8px;
+      left: 8px;
+    }
+  }
+  .price__cell-text {
+    display: none;
+  }
+  .price__title {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .price__text {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+}
+
+@media @desktop-widths {
+  .price {
+    width: 940px;
+    margin-left: 130px;
+  }
+  .price__cell {
+    width: 245px;
+    padding: 13px 0 16px 21px;
+    font-size: 18px;
+    &_header {
+      padding: 0;
+    }
+    &_hit {
+      background-size: 74px 74px;
+    }
+    &_hit::before {
+      top: 15px;
+      left: 10px;
+    }
+  }
+  .price__title {
+    font-size: 18px;
+    margin-bottom: 17px;
+  }
+  .price__text {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+}

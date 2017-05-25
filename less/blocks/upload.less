@@ -1,0 +1,247 @@
+.upload {
+  .container();
+  padding-top: 10px;
+  text-align: center;
+}
+.upload__text {
+  margin-bottom: 42px;
+}
+.upload__content-wpapper {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  background: @bg-grey;
+}
+.upload__img-wrapper {
+  .content-container();
+  padding-top: 375px;
+  margin-bottom: 40px;
+  background: url("../img/photo-7-mobile@1x.jpg") no-repeat top center;
+  background-size: cover;
+}
+
+@media (min-resolution: 144dpi),
+        (min-resolution: 1.5dppx) {
+  .upload__img-wrapper {
+    background: url("../img/photo-7-mobile@2x.jpg") no-repeat top center;
+    background-size: cover;
+  }
+}
+
+.upload__filters-wrapper {
+  .content-container();
+  .clearfix();
+}
+.upload__filter {
+  float: left;
+  margin-left: 32px;
+  position: relative;
+  &:last-of-type {
+    margin-bottom: 38px;
+  }
+}
+.upload__bnt {
+  margin-bottom: 69px;
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: none;
+  &_contrast {
+    margin-left: 9px;
+    margin-top: 4px;
+  }
+  &:hover .upload__icon {
+    fill: #8d949b;
+  }
+  &:active .upload__icon {
+    fill: @pink;
+  }
+}
+.upload__icon {
+  fill: #b5b9be;
+}
+.upload__range {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  top: 84px;
+  left: -14px;
+  width: 240px;
+  height: 2px;
+  background: #000;
+  &_visible {
+    display: block;
+  }
+}
+.upload__slider {
+  cursor: pointer;
+  position: absolute;
+  top: -5px;
+  left: 192px;
+  width: 10px;
+  height: 10px;
+  border: 2px solid @pink;
+  border-radius: 50%;
+  background: @white;
+  &:active {
+    background-color: @bg-pink;
+  }
+}
+
+@media @tablet-widths {
+  .upload {
+    padding-top: 25px;
+  }
+  .upload__text {
+    margin-bottom: 67px;
+    font-size: 18px;
+  }
+  .upload__content-wpapper {
+    .clearfix();
+    padding: 58px 30px 25px 30px;
+  }
+  .upload__img-wrapper {
+    float: left;
+    width: 300px;
+    padding-top: 400px;
+    margin: 0;
+    background: url("../img/photo-7-tablet@1x.jpg") no-repeat top center;
+  }
+
+  @media (min-resolution: 144dpi),
+          (min-resolution: 1.5dppx) {
+    .upload__img-wrapper {
+      background: url("../img/photo-7-tablet@2x.jpg") no-repeat top center;
+      background-size: cover;
+    }
+  }
+
+  .upload__filters-wrapper {
+    .clearfix();
+    float: left;
+    width: 275px;
+    margin-top: -20px;
+    margin-left: 25px;
+    &:last-of-type {
+      margin-bottom: 28px;
+    }
+  }
+  .upload__filter {
+    .clearfix();
+    float: none;
+    padding: 28px 0 23px 0;
+    margin-left: 0;
+    border-bottom: 1px solid #dddfe0;
+  }
+  .upload__bnt {
+    float: left;
+    width: 24px;
+    height: 24px;
+    margin-bottom: 0;
+    &_contrast {
+      width: 17px;
+      height: 17px;
+      margin-top: -2px;
+    }
+  }
+  .upload__icon {
+    width: 24px;
+    height: 24px;
+    &_small {
+      width: 18px;
+      height: 18px;
+    }
+  }
+  .upload__range {
+    display: block;
+    top: 38px;
+    left: 55px;
+    width: 203px;
+  }
+  .upload__slider {
+    top: -5px;
+    &_crop {
+      left: 145px;
+    }
+    &_fill {
+      left: 25px;
+    }
+    &_contrast {
+      left: 95px;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .upload {
+    .content-container();
+    margin-top: -14px;
+    margin-bottom: 30px;
+    padding-top: 0px;
+  }
+  .upload__content-wpapper {
+    padding: 58px 40px 28px 80px;
+  }
+  .upload__img-wrapper {
+    background: url("../img/photo-7-desktop@1x.jpg") no-repeat top center;
+  }
+
+  @media (min-resolution: 144dpi),
+          (min-resolution: 1.5dppx) {
+    .upload__img-wrapper {
+      background: url("../img/photo-7-desktop@2x.jpg") no-repeat top center;
+      background-size: cover;
+    }
+  }
+
+  .upload__filters-wrapper {
+    width: 410px;
+    margin-top: -19px;
+    margin-left: 90px;
+  }
+  .upload__filter {
+    padding: 15px 0 10px 0;
+    margin-left: 0;
+  }
+  .upload__bnt {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 0;
+    &_contrast {
+      width: 39px;
+      height: 39px;
+      margin-top: 0px;
+      margin-left: 4px;
+    }
+  }
+  .upload__icon {
+    width: 48px;
+    height: 48px;
+    &_small {
+      width: 34px;
+      height: 34px;
+    }
+  }
+  .upload__range {
+    top: 37px;
+    left: 92px;
+    width: 289px;
+  }
+  .upload__slider {
+    &_crop {
+      left: 70px;
+    }
+    &_fill {
+      left: 247px;
+    }
+    &_contrast {
+      left: 160px;
+    }
+  }
+  .upload__btn-wrapper {
+    display: inline-block;
+    width: 410px;
+    margin-left: -5px;
+    padding-top: 120px;
+  }
+}

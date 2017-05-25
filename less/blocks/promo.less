@@ -1,0 +1,39 @@
+.promo {
+  .container();
+  padding-top: 17px;
+  padding-bottom: 4px;
+  font-family: @font-light;
+  font-size: 24px;
+  text-align: center;
+}
+
+@media @tablet-widths {
+  .promo {
+    padding-top: 47px;
+    padding-bottom: 24px;
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .promo__text {
+    padding: 0;
+    margin: 0;
+    &_thin {
+      width: 340px;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media @desktop-widths  {
+  .promo {
+    padding-top: 67px;
+    padding-bottom: 77px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .promo__text {
+    &_thin {
+      width: 500px;
+    }
+  }
+}

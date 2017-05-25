@@ -1,0 +1,72 @@
+.intro-mini {
+  .container();
+  padding-top: 30px;
+  padding-bottom: 80px;
+  text-align: center;
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat center -70px;
+  &_padding-bottom {
+    padding-bottom: 50px;
+  }
+}
+
+@media (min-resolution: 144dpi),
+        (min-resolution: 1.5dppx) {
+  .intro-mini {
+    background: url("../img/bg-back-mobile@2x.jpg") no-repeat center -70px;
+  }
+}
+
+.intro-mini__title {
+  .content-container();
+  font-family: @font-light;
+  font-weight: 400;
+  font-size: 24px;
+  color: @white;
+}
+
+@media @tablet-widths {
+  .intro-mini {
+    padding-top: 70px;
+    padding-bottom: 140px;
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat center -110px;
+    &_padding-bottom {
+      padding-bottom: 78px;
+    }
+  }
+
+  @media (min-resolution: 144dpi),
+          (min-resolution: 1.5dppx) {
+    .intro-mini {
+      background: url("../img/bg-back-tablet@2x.jpg") no-repeat center -110px;
+    }
+  }
+
+  .intro-mini__title {
+    width: 474px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
+@media @desktop-widths {
+  .intro-mini {
+    margin-top: -110px;
+    padding-top: 172px;
+    padding-bottom: 102px;
+    background: url("../img/bg-back-desktop@1x.jpg") no-repeat center top;
+    &_padding-bottom {
+      padding-bottom: 101px;
+    }
+  }
+
+  @media (min-resolution: 144dpi),
+          (min-resolution: 1.5dppx) {
+    .intro-mini {
+      background: url("../img/bg-back-desktop@2x.jpg") no-repeat center top;
+    }
+  }
+
+  .intro-mini__title {
+    width: 658px;
+  }
+}
