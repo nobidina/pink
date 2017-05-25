@@ -106,7 +106,7 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           src: [
-            "fonts/**/*.{woff, woff2}",
+            "fonts/**/*.{woff,woff2}",
             "img/**",
             "js/**",
             "*.html"
@@ -131,7 +131,7 @@ module.exports = function(grunt) {
 });
 
   grunt.registerTask ('deploy', ['gh-pages']);
-  
+
   grunt.registerTask("serve", ["browserSync", "watch"]);
   grunt.registerTask("symbols", ["svgmin", "svgstore"]);
   grunt.registerTask("build", [
