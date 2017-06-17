@@ -20,6 +20,7 @@
                 };
             });
         },
+
         step: function(direction) {
             switch(direction) {
                 case 'prev':

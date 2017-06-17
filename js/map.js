@@ -10,7 +10,7 @@ function initMap() {
     disableDefaultUI: true
   });
 
-  var image = '../img/icons/icon-map-marker.svg';
+  var image = '/img/icons/icon-map-marker.svg';
 
   var marker = new google.maps.Marker({
     position: coords,
