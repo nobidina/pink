@@ -7,16 +7,17 @@
               url("../img/bg-triangle-white.svg") no-repeat top center,
               @bg-grey;
 }
-
 @media (min-resolution: 144dpi),
         (min-resolution: 1.5dppx) {
   .features {
     background: url("../img/iphone-screen-mobile@2x.png") no-repeat center 109%,
-                        url("../img/bg-triangle-white.svg") no-repeat top center,
-                        @bg-grey;
+                url("../img/bg-triangle-white.svg") no-repeat top center,
+                @bg-grey;
+    background-size: 157px 320px,
+                     contain,
+                     contain;
   }
 }
-
 .features__list {
   list-style: none;
   padding: 0;
@@ -50,16 +51,17 @@
                 url("../img/bg-triangle-white.svg") no-repeat top center,
                 @bg-grey;
   }
-
   @media (min-resolution: 144dpi),
           (min-resolution: 1.5dppx) {
     .features {
       background: url("../img/iphone-screen-3-tablet@2x.png") no-repeat 40px bottom,
-                  url("../img/bg-triangle-white.svg") no-repeat top center,
+                  url("../img/bg-triangle-white.svg") no-repeat -20px 0,
                   @bg-grey;
+      background-size: 268px 481px,
+                       contain,
+                       contain;
     }
   }
-
   .features__list {
     width: 310px;
     margin: 0 0 0 330px;
@@ -88,18 +90,21 @@
                 url("../img/bg-triangle-white.svg") no-repeat top center,
                 @bg-grey;
   }
-
   @media (min-resolution: 144dpi),
           (min-resolution: 1.5dppx) {
     .features {
       background: url("../img/iphone-screen-1-desktop@2x.png") no-repeat 135px -3px,
                   url("../img/iphone-screen-2-desktop@2x.png") no-repeat 457px -3px,
                   url("../img/iphone-screen-3-desktop@2x.png") no-repeat 777px -3px,
-                  url("../img/bg-triangle-white.svg") no-repeat top center,
+                  url("../img/bg-triangle-white.svg") no-repeat -20px 0,
                   @bg-grey;
+      background-size: 292px 302px,
+                       292px 302px,
+                       292px 302px,
+                       contain,
+                       contain;
     }
   }
-
   .features__list {
     .clearfix();
     width: 940px;
