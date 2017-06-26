@@ -698,6 +698,9 @@ img {
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .features {
     background: url("../img/iphone-screen-mobile@2x.png") no-repeat center 109%, url("../img/bg-triangle-white.svg") no-repeat top center, #f2f2f2;
+    background-size: 157px 320px,
+                     contain,
+                     contain;
   }
 }
 .features__list {
@@ -748,7 +751,10 @@ img {
 }
 @media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
   .features {
-    background: url("../img/iphone-screen-3-tablet@2x.png") no-repeat 40px bottom, url("../img/bg-triangle-white.svg") no-repeat top center, #f2f2f2;
+    background: url("../img/iphone-screen-3-tablet@2x.png") no-repeat 40px bottom, url("../img/bg-triangle-white.svg") no-repeat -20px 0, #f2f2f2;
+    background-size: 268px 481px,
+                       contain,
+                       contain;
   }
 }
 @media (min-width: 960px) {
@@ -790,7 +796,12 @@ img {
 }
 @media (min-width: 960px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 960px) and (min-resolution: 144dpi), (min-width: 960px) and (min-resolution: 1.5dppx) {
   .features {
-    background: url("../img/iphone-screen-1-desktop@2x.png") no-repeat 135px -3px, url("../img/iphone-screen-2-desktop@2x.png") no-repeat 457px -3px, url("../img/iphone-screen-3-desktop@2x.png") no-repeat 777px -3px, url("../img/bg-triangle-white.svg") no-repeat top center, #f2f2f2;
+    background: url("../img/iphone-screen-1-desktop@2x.png") no-repeat 135px -3px, url("../img/iphone-screen-2-desktop@2x.png") no-repeat 457px -3px, url("../img/iphone-screen-3-desktop@2x.png") no-repeat 777px -3px, url("../img/bg-triangle-white.svg") no-repeat -20px 0, #f2f2f2;
+    background-size: 292px 302px,
+                       292px 302px,
+                       292px 302px,
+                       contain,
+                       contain;
   }
 }
 .form__group {
@@ -1484,6 +1495,8 @@ img {
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .intro {
     background: url("../img/iphone-hand-mobile@2x.png") no-repeat left 110px, #283645 url("../img/bg-back-mobile@2x.jpg") no-repeat center -70px;
+    background-size: 258px 286px,
+                     700px 462px;
   }
 }
 .intro__content-wrapper {
@@ -1571,6 +1584,8 @@ img {
 @media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
   .intro {
     background: url("../img/iphone-hand-tablet@2x.png") no-repeat left 70px, #283645 url("../img/bg-back-tablet@2x.jpg") no-repeat center 0;
+    background-size: 700px 545px,
+                       1200px 729px;
   }
 }
 @media (min-width: 960px) {
@@ -1596,6 +1611,8 @@ img {
 @media (min-width: 960px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 960px) and (min-resolution: 144dpi), (min-width: 960px) and (min-resolution: 1.5dppx) {
   .intro {
     background: url("../img/iphone-hand-desktop@2x.png") no-repeat 145px bottom, #283645 url("../img/bg-back-desktop@2x.jpg") no-repeat center 0;
+    background-size: 1050px 645px,
+                       2560px 853px;
   }
 }
 .intro-mini {
@@ -1622,6 +1639,7 @@ img {
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .intro-mini {
     background: url("../img/bg-back-mobile@2x.jpg") no-repeat center -70px;
+    background-size: 700px 462px;
   }
 }
 .intro-mini__title {
@@ -1660,6 +1678,7 @@ img {
 @media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
   .intro-mini {
     background: url("../img/bg-back-tablet@2x.jpg") no-repeat center -110px;
+    background-size: 1200px 729px;
   }
 }
 @media (min-width: 960px) {
@@ -1679,6 +1698,7 @@ img {
 @media (min-width: 960px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 960px) and (min-resolution: 144dpi), (min-width: 960px) and (min-resolution: 1.5dppx) {
   .intro-mini {
     background: url("../img/bg-back-desktop@2x.jpg") no-repeat center top;
+    background-size: 2560px 853px;
   }
 }
 .like {
@@ -2703,7 +2723,7 @@ img {
 @media (min-width: 960px) {
   .reviews-block {
     padding-top: 163px;
-    padding-bottom: 0;
+    padding-bottom: 30px;
     background: url("../img/icons/icon-quotes.svg") no-repeat center 70px;
     background-size: 79px 64px;
   }

@@ -10,11 +10,15 @@ function initMap() {
     disableDefaultUI: true
   });
 
-  var image = 'img/icons/icon-map-marker.svg';
+  var image = {
+    url: 'img/icons/icon-map-marker.svg',
+    scaledSize: new google.maps.Size(36, 36),
+  }
 
   var marker = new google.maps.Marker({
     position: coords,
     map: map,
+    optimized: false,
     icon: image,
     title: 'Pink'
   });
